@@ -1,7 +1,7 @@
+---
 - name: Update repositories  
+  become: yes
   apt:    
     update_cache: yes
-- name: Install git  
-  apt:    
-  name: git    
-  state: present
+    name: git    
+    state: present
